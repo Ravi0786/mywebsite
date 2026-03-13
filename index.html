@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Meri Pehli Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+background-color: lightblue;
+text-align: center;
+font-family: Arial;
+margin-top: 100px;
+}
+}nav{
+background-color: blue;
+padding: 10px;
+text-align: center;
+position: sticky;
+top: 0;
+}
+
+nav a{
+color: white;
+margin: 10px;
+text-decoration: none;
+font-size: 18px;
+}button{
+background-color: green;
+color: white;
+padding: 10px 20px;
+border: none;
+font-size: 18px;
+border-radius: 5px;
+cursor: pointer;
+}img{
+border-radius:50%;
+}
+header{
+background-color: green;
+color: white;
+text-align: center;
+padding: 15px;
+font-size: 24px;
+}
+nav a:hover{
+color: yellow;
+}
+@media (max-width:600px){
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+img{
+width:80%;
+}
+
+}
+header{
+animation: fadein 2s;
+}
+
+@keyframes fadein{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+</style>
+</head>
+
+<body>
+    <header>
+<h1>HealthWithRavi</h1>
+</header>
+<nav>
+<a href="#">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="blog.html">Blog</a>
+</nav>s
+<h1>Hello Ravi</h1>
+<img src="WIN_20251110_11_23_00_Pro.jpg" width="300">
+<p>Yeh meri pehli website hai</p>
+<button onclick="showMessage()">Click Here</button>
+<script>
+function showMessage(){
+alert("Hello Ravi! Aapki website ka button kaam kar raha hai!");
+}
+</script>
+<footer>
+<p>© 2026 HealthWithRavi | All Rights Reserved</p>
+</footer>
+</body>
+
+</html>

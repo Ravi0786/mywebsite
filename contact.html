@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+input, textarea{
+width: 300px;
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid gray;
+}
+
+textarea{
+height: 100px;
+}
+
+</style>
+<head>
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="text-align:center; font-family:Arial;">
+
+<h1>Contact Me</h1>
+
+<form>
+<br>
+<input type="text" placeholder="Your Name"><br><br>
+
+<input type="email" placeholder="Your Email"><br><br>
+
+<textarea placeholder="Your Message"></textarea><br><br>
+
+<button type="button" onclick="showAlert()">Send Message</button>
+
+</form>
+
+<br><br>
+
+<a href="index.html">Go Back Home</a>
+<script>
+function showAlert(){
+alert("Message sent successfully!");
+}
+</script>
+</body>
+
+</html>
