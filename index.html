@@ -1,133 +1,143 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-<title>Meri Pehli Website</title>
+<title>HealthWithRavi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+
 body{
 background-color: lightblue;
-text-align: center;
+text-align:center;
 font-family: Arial;
-margin-top: 100px;
+margin:0;
 }
-}nav{
+
+header{
+background-color: green;
+color:white;
+padding:20px;
+font-size:28px;
+}
+
+nav{
 background-color: blue;
-padding: 10px;
-text-align: center;
-position: sticky;
-top: 0;
+padding:10px;
 }
 
 nav a{
-color: white;
-margin: 10px;
-text-decoration: none;
-font-size: 18px;
-}button{
-background-color: green;
-color: white;
-padding: 10px 20px;
-border: none;
-font-size: 18px;
-border-radius: 5px;
-cursor: pointer;
-}img{
-border-radius:50%;
+color:white;
+margin:10px;
+text-decoration:none;
+font-size:18px;
 }
-header{
-background-color: green;
-color: white;
-text-align: center;
-padding: 15px;
-font-size: 24px;
-}
+
 nav a:hover{
-color: yellow;
-}
-@media (max-width:600px){
-
-nav a{
-display:block;
-margin:10px 0;
+color:yellow;
 }
 
-img{
-width:80%;
+.blog-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
 }
 
-}
-header{
-animation: fadein 2s;
+.blog-card{
+border:1px solid #ddd;
+background:white;
+padding:15px;
+width:260px;
+border-radius:8px;
 }
 
-@keyframes fadein{
-from{
-opacity:0;
+.blog-card img{
+width:100%;
 }
-to{
-opacity:1;
+
+.blog-card a{
+display:inline-block;
+margin-top:10px;
+padding:8px 15px;
+background:green;
+color:white;
+text-decoration:none;
+border-radius:5px;
 }
+
+button{
+background-color:green;
+color:white;
+padding:10px 20px;
+border:none;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
 }
+
+footer{
+margin-top:40px;
+background:#222;
+color:white;
+padding:20px;
+}
+
 </style>
+
 </head>
 
 <body>
-    <header>
-<h1>HealthWithRavi</h1>
+
+<header>
+HealthWithRavi
 </header>
+
 <nav>
 <a href="#">Home</a>
-<a href="about.html">About Us</a>
+<a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 <a href="blog.html">Blog</a>
-</nav>s
+</nav>
+
 <h1>Hello Ravi</h1>
-<img src="WIN_20251110_11_23_00_Pro.jpg" width="300">
-<p>Yeh meri pehli website hai</p>
+
+<img src="WIN_20251110_11_23_00_Pro.jpg" width="250">
+
+<p>Welcome to my health blog website.</p>
+
 <button onclick="showMessage()">Click Here</button>
+
 <script>
 function showMessage(){
 alert("Hello Ravi! Aapki website ka button kaam kar raha hai!");
 }
 </script>
-<footer>
-<p>© 2026 HealthWithRavi | All Rights Reserved</p>
-    <footer style="text-align:center; margin-top:40px;">
-<p>© 2026 HealthWithRavi</p>
-    </footer>
-    
 
-<p>Fatty liver ek common health problem hai. Is article me hum natural diet, exercise aur lifestyle tips ke baare me baat karenge jo liver ko healthy banane me madad karte hain.</p>
+<h2>Latest Blog Posts</h2>
 
-<a href="fatty-liver-guide.html">Read Full Article</a><h2>My Blog</h2>
+<div class="blog-container">
 
-    <h2 style="text-align:center;">Latest Blog Posts</h2>
-
-<div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-
-  <!-- Blog 1 -->
-  <div style="border:1px solid #ddd; padding:15px; width:250px; text-align:center;">
-    <img src="Healthy lifestyle for fatty liver care.png" style="width:100%;">
-    <h3>Fatty Liver Kaise Theek Kare Naturally</h3>
-    <a href="fatty-liver-guide.html">Read More</a>
-  </div>
-
-  <!-- Blog 2 -->
-  <div style="border:1px solid #ddd; padding:15px; width:250px; text-align:center;">
-    <img src="bellyfat.png" style="width:100%;">
-    <a href="https://ravi0786.github.io/mywebsite/belly-fat-loss.html">Pet Ki Charbi Kam Karne Ka Complete Guide</a>
-  </div>
-
-</div>
-<div style="border:1px solid #ddd; padding:15px; width:300px;">
-
-<img src="Healthy lifestyle for fatty liver care.png" alt="Fatty Liver Tips" style="width:100%;">
-
+<div class="blog-card">
+<img src="Healthy lifestyle for fatty liver care.png">
 <h3>Fatty Liver Kaise Theek Kare Naturally</h3>
+<a href="fatty-liver-guide.html">Read Article</a>
+</div>
+
+<div class="blog-card">
+<img src="bellyfat.png">
+<h3>Pet Ki Charbi Kam Karne Ka Complete Guide</h3>
+<a href="belly-fat-loss.html">Read Article</a>
+</div>
 
 </div>
+
+<footer>
+© 2026 HealthWithRavi | All Rights Reserved
+</footer>
+
 </body>
 
 </html>
-
